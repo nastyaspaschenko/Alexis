@@ -1,0 +1,87 @@
+$bg_dark: rgba(38, 39, 50, 0.85);
+$bg_light: #fff;
+$bg_mild: #f7f7f7;
+
+$simple_text_color: #616161;
+$primary_text_color: #313131;
+$secondary_text_color: #272727;
+$light_text_color: #fff;
+$lighter_text_color: #fefefe;
+
+$accent_color_1: #fc5f45;
+$accent_color_2: #38c695;
+$accent_color_3: #b27cf5;
+$accent_color_4: #feb960;
+
+$default_box_shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+
+%gradient_border_top {
+    border-width: 3px 0 0 0;
+    border-style: solid;
+    border-image: linear-gradient(to right, 
+    $accent_color_1 25%, 
+    $accent_color_2 25% 50%, 
+    $accent_color_3 50% 75%, 
+    $accent_color_4 75%) 100% 1;
+}
+
+%gradient_border_bottom {
+    border-width: 0 0 3px 0;
+    border-style: solid;
+    border-image: linear-gradient(to right, 
+    $accent_color_1 25%, 
+    $accent_color_2 25% 50%, 
+    $accent_color_3 50% 75%, 
+    $accent_color_4 75%) 100% 1;
+}
+
+@mixin circle($size, $color, $color_bg) {
+    width: $size;
+    height: $size;
+    box-shadow: 0 0 0 3px $color;
+    border: solid 3px $color_bg;
+    border-radius: 50%;
+    background-color: $color;
+}
+
+@mixin btn($color) {
+    display: inline-block;
+    padding: 15px 42px;
+    border-radius: 25px;
+    border: solid 2px $color;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 20px;
+    text-transform: uppercase;
+
+    background-color: $color;
+    color: $light_text_color;
+    transition: 0.2s linear;
+    
+    &:hover {
+        cursor: pointer;
+        background-color: transparent;
+        color: $color;
+    }
+}
+
+@mixin btn_accent($color) {
+    display: inline-block;
+    padding: 15px 42px;
+    border-radius: 25px;
+    border: solid 2px $color;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 20px;
+    text-transform: uppercase;
+
+    background-color: transparent;
+    color: $color;
+    transition: 0.2s linear;
+
+    &:hover {
+        cursor: pointer;
+        background-color: $color;
+        color: $light_text_color;
+    }
+}

@@ -1,0 +1,309 @@
+/* lg-размер (<=1199px)
+   CSS для ширины от 992px до 1199px */
+@media (max-width: 1199px) {
+    .container {        
+        margin: 0 40px;
+    }
+
+    header .nav_menu li {
+        margin-left: 15px;
+    }
+
+    #about .about_inner .about_right {
+        width: 600px;
+        padding: 80px 70px;
+    }
+
+    #focus .focus_inner {
+        padding-bottom: 70px;
+        .services {
+            flex-wrap: wrap;
+            max-width: 550px;
+            margin: 70px auto;
+            .service_item {
+                margin-top: 15px;
+            }
+        }
+    }
+
+    #portfolio .portfolio_inner {
+        padding-bottom: 70px;
+        .portfolio_gallery {
+            max-width: 750px;
+            margin: 60px auto 0;
+        }
+    }
+
+    #team .team_inner {
+        .team_items {
+            flex-wrap: wrap;
+            max-width: 560px;
+            margin: 50px auto 0;
+            .team_item {
+                margin-top: 15px;
+            }
+        }
+    }
+
+    #work_steps .work_steps_inner {
+        padding-bottom: 70px;
+        .ws_items {
+            .ws_item {
+                margin-bottom: 320px;
+                .ws_item_desc {
+                    top: 300px;
+                }
+                &:nth-child(odd) .ws_item_desc {
+                    left: 0;
+                }
+                &:nth-child(even) .ws_item_desc {
+                    right: 0;
+                }
+            }
+        }
+    }
+
+    #testimonials .testimonials_inner .feedback .feedback_content {
+        margin-left: -70px;
+        padding: 30px;
+    }
+
+    #blog .blog_inner {
+        .blog_posts {
+            flex-wrap: nowrap;
+            height: auto;
+            margin: 0 auto;
+            width: 555px;
+
+            .blog_post {
+                margin-top: 20px;
+            }
+        }
+        
+    }
+}
+
+/* md-размер (<=991px) 
+   CSS для ширины от 768px до 991px */
+@media (max-width: 991px) {
+    .container {        
+        margin: 0 25px;
+    }
+
+    header .header_inner {
+        .nav_menu {
+            display: none;
+        }
+        .mobile_nav_menu {
+            display: block;
+        }
+    }
+
+    #about {
+        min-height: 1270px;
+        .about_inner .about_right {
+            top: 630px;
+        }   
+    }
+
+    #pricing .pricing_inner {
+        padding-bottom: 70px;
+        .packages {
+            flex-wrap: wrap;
+            max-width: 360px;
+            margin: 70px auto 0;
+        }
+    }
+
+    #testimonials .testimonials_inner {
+        padding-bottom: 70px;
+        .feedback {
+            flex-direction: column;
+            .feedback_content {
+                margin-left: 0;
+                padding: 40px 50px;
+            }
+            .circles {
+                position: static;
+                margin-top: 30px;
+            }
+        }
+    }
+
+    footer {
+        padding: 20px;
+        height: auto;
+        flex-wrap: wrap;
+        justify-content: space-between;
+
+        .f_column {
+            width: 45%;
+            margin: 20px 10px;
+        }
+    }
+}
+
+/* sm-размер (<=767px) 
+   CSS для ширины от 576px до 767px */
+@media (max-width: 767px) { 
+    .container {        
+        margin: 0 10px;
+    }
+
+    #home .home_inner .heading {
+        font-size: 40px;
+    }
+
+    #about .about_inner {        
+        padding: 70px 0;
+        .about_left_img {
+            margin: 10px auto;
+        }  
+        .about_right {
+            position: static;
+            margin: 10px auto;
+            max-width: 100%;
+        }  
+    }
+
+    .why_select_us .why_select_us_inner .ws_features .wsf_item {
+        width: 45%;
+    }
+
+}
+
+/* xs-размер (<=575px) 
+   CSS для ширины до 575px (включительно)*/
+@media (max-width: 575px) {
+    .container {        
+        margin: 0 5px;
+    }
+
+    h2 {
+        font-size: 25px;
+        font-weight: bold;
+        line-height: 1.6;
+    }
+
+    #home {
+        min-height: auto;
+        .home_inner {
+            padding: 180px 0 70px;
+            .heading {
+                font-size: 35px;
+            }
+            .features {
+                flex-wrap: wrap;
+                margin-top: 20px;
+                .feature_item {
+                    margin-top: 40px;
+                    .fi_icon {
+                        margin-bottom: 20px;
+                    }
+                }
+            }
+        }
+    }
+
+    #about {
+        min-height: auto;
+        .about_inner {            
+            .about_left_img {
+                max-width: 100%;
+            }  
+            .about_right {
+                height: auto;
+                padding: 30px;
+            }  
+        }
+    }
+
+    #focus .focus_inner .services {
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 0;
+    }
+
+    #team .team_inner .team_items {
+        max-width: 263px;
+    }
+
+    .stats .stats_inner {
+        .stats_items {
+            flex-wrap: wrap;
+            margin: 0 auto;
+            max-width: 420px;
+            .stats_item {
+                width: 200px;
+            }
+        }
+    }
+
+    #work_steps .work_steps_inner {
+        
+        .ws_items {
+            .ws_item {
+                margin-bottom: 20px;
+                width: 100%;
+                height: auto;
+                .ws_item_desc {
+                    position: static;
+                    margin: 0 auto;
+                    max-width: 100%;
+                    height: auto;
+                }
+            }
+            #ws_item_1, #ws_item_2, #ws_item_3, #ws_item_4 {
+                background-image: none;
+            }
+        }
+    }
+
+    #testimonials .testimonials_inner .feedback .feedback_img {
+        display: none;
+    }
+
+    .why_select_us .why_select_us_inner .ws_features .wsf_item {
+        width: 90%;
+    }
+
+    #blog .blog_inner {
+        .blog_posts {
+            width: 100%;
+
+            .blog_post {
+                width: 100%;
+                height: auto;
+            }
+            #blog_post_main {
+                height: auto;
+                padding: 25px 35px;
+                background: $bg_light;  
+                .post_title {
+                    margin: 10px auto;
+                }
+                .post_date {
+                    color: $simple_text_color;
+                    opacity: 1;
+                }
+            }
+        }
+        
+    }
+
+    .get_in_touch .get_in_touch_inner form input {
+        width: 100%;
+    }
+
+    footer {
+        flex-direction: column;
+        align-items: center;
+
+        .logo {
+            margin: 20px 0;
+        }
+        .f_column {
+            width: auto;
+        }
+    }
+}
